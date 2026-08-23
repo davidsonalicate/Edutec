@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #00040a;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    max-width: 1330px;
+    height: 120px;
+    border-bottom: 1px solid #06446a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 65px;
+    padding-right: 65px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    font-size: 27px;
+    margin-left: 8px;
+}
+
+.logo h2 span {
+    color: #00aaff;
+}
+
+nav {
+    display: flex;
+    gap: 55px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.ativo {
+    color: #00aaff;
+}
+
+
+/* MAIN */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* HERO */
+
+.protecao-inicio {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 625px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.protecao-texto {
+    width: 560px;
+}
+
+.protecao-texto h1 {
+    font-size: 54px;
+    line-height: 1.08;
+    margin-bottom: 35px;
+}
+
+.protecao-texto h1 strong {
+    display: block;
+    color: #00aaff;
+}
+
+.protecao-texto p {
+    width: 510px;
+    color: #d6dce1;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #009ee8;
+    color: white;
+    text-decoration: none;
+    padding: 14px 23px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #00aaff;
+}
+
+
+/* IMAGEM */
+
+.protecao-imagem {
+    width: 590px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.protecao-imagem img {
+    width: 570px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+
+/* LINHA */
+
+.linha {
+    width: 100%;
+    max-width: 1150px;
+    height: 1px;
+    background-color: #075077;
+    margin: 0 auto;
+}
+
+
+/* PRÁTICAS */
+
+.praticas {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 570px;
+    margin: 0 auto;
+    padding-top: 55px;
+}
+
+.praticas > h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 55px;
+}
+
+.praticas > h2 span {
+    color: #00aaff;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    width: 100%;
+    min-height: 250px;
+    background-color: #00111d;
+    border: 2px solid #009fe8;
+    border-radius: 7px;
+    text-align: center;
+    padding: 25px 35px;
+}
+
+.icone {
+    font-size: 55px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #d0d7dc;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+
+/* CHECKLIST + COMPARAÇÃO */
+
+.seguranca-extra {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 400px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+.checklist,
+.comparacao {
+    width: 540px;
+}
+
+.checklist h2,
+.comparacao h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.checklist h2 span,
+.comparacao h2 span {
+    color: #00aaff;
+}
+
+.checklist ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.checklist li {
+    background-color: #00111d;
+    border: 2px solid #075077;
+    border-radius: 7px;
+    padding: 16px 20px;
+    color: #d4d9dd;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.comparacao table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #00111d;
+    border: 2px solid #075077;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.comparacao th {
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    border-bottom: 1px solid #075077;
+}
+
+.comparacao td {
+    padding: 14px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #075077;
+}
+
+.fraco {
+    color: #ff5c5c;
+}
+
+.forte {
+    color: #00d9a5;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 250px;
+    margin: 0 auto;
+    border-top: 1px solid #075077;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.rodape-logo {
+    width: 310px;
+    border-right: 1px solid #075077;
+    padding-right: 30px;
+}
+
+.rodape-logo .logo img {
+    width: 65px;
+    height: 50px;
+}
+
+.rodape-logo .logo h2 {
+    font-size: 22px;
+}
+
+.rodape-logo p {
+    color: #cdd3d7;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-top: 8px;
+}
+
+.redes {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.redes img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.rodape-coluna {
+    width: 250px;
+    padding-left: 28px;
+    border-right: 1px solid #075077;
+}
+
+.rodape-coluna h3 {
+    color: #00aaff;
+    font-size: 16px;
+    margin-bottom: 17px;
+}
+
+.rodape-coluna a {
+    display: block;
+    color: #d4d9dd;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.rodape-coluna a:hover {
+    color: #00aaff;
+}
+
+.rodape-coluna p {
+    color: #d4d9dd;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.newsletter {
+    width: 340px;
+    border-right: none;
+}
+
+.email {
+    display: flex;
+    width: 280px;
+    height: 38px;
+    margin-top: 20px;
+}
+
+.email input {
+    width: 220px;
+    background-color: #00111d;
+    border: 1px solid #075077;
+    color: white;
+    padding-left: 12px;
+    outline: none;
+}
+
+.email button {
+    width: 60px;
+    border: none;
+    background-color: #009fe8;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.email button:hover {
+    background-color: #00aaff;
+}
+
+
+/* FINAL */
+
+.final {
+    width: 100%;
+    max-width: 1330px;
+    height: 50px;
+    border-top: 1px solid #075077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+    header {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .protecao-inicio {
+        padding: 40px 30px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .protecao-texto,
+    .protecao-imagem {
+        width: 100%;
+    }
+
+    .protecao-texto p {
+        width: 100%;
+    }
+
+    .cards {
+        padding: 0 30px;
+    }
+
+    .seguranca-extra {
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .checklist,
+    .comparacao {
+        width: 50%;
+    }
+
+    footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+        min-height: 100px;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .protecao-texto h1 {
+        font-size: 42px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .seguranca-extra {
+        flex-direction: column;
+    }
+
+    .checklist,
+    .comparacao {
+        width: 100%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .logo h2 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .protecao-texto h1 {
+        font-size: 36px;
+    }
+
+    .protecao-texto p {
+        font-size: 16px;
+    }
+
+    .protecao-imagem {
+        height: auto;
+    }
+
+    .protecao-imagem img {
+        width: 100%;
+        height: auto;
+    }
+
+    .praticas > h2,
+    .checklist h2,
+    .comparacao h2 {
+        font-size: 20px;
+    }
+}
