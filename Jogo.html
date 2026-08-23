@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSec Infiltration</title>
+    <link rel="stylesheet" href="./Style/jogo.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./img/logo2.png" alt="CyberShield">
+            <h2>Cyber<span>Shield</span></h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#ameacas">Ameaças</a>
+            <a href="index.html#protecao">Proteção</a>
+            <a href="index.html#conteudos">Conteúdos</a>
+            <a href="jogo.html" class="active">Jogos</a>
+        </nav>
+    </header>
+
+    <main id="main-game">
+        <div id="game-container">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            <div id="ui-layer">
+                <div id="start-screen" class="screen">
+                    <h1 class="glitch" data-text="CYBER INFILTRATION">CYBER INFILTRATION</h1>
+                    <p>Mova-se com SETAS ou WASD. Pule com ESPAÇO. Interaja com 'E'.</p>
+                    <p>Pressione ENTER para Iniciar a Invasão</p>
+                </div>
+                
+                <div id="pause-screen" class="screen hidden">
+                    <h1>SISTEMA PAUSADO</h1>
+                    <p>Pressione 'P' ou 'ESC' para Retomar</p>
+                </div>
+                
+                <div id="game-over-screen" class="screen hidden">
+                    <h1 class="error">CONEXÃO PERDIDA</h1>
+                    <p>Vidas Esgotadas.</p>
+                    <p>Pressione ENTER para Tentar Novamente</p>
+                </div>
+
+                <div id="level-complete-screen" class="screen hidden">
+                    <h1 class="success">FIREWALL BYPASSED</h1>
+                    <p>Acesso Concedido ao Próximo Nó.</p>
+                    <p>Pressione ENTER para Continuar</p>
+                </div>
+
+                <div id="game-won-screen" class="screen hidden">
+                    <h1 class="success">MAINFRAME HACKEADO!</h1>
+                    <p>Você destruiu o A.I. Core e liberou a rede!</p>
+                    <p>Obrigado por jogar!</p>
+                </div>
+                
+                <div id="hud" class="hidden">
+                    <div class="hud-item">❤️ Vidas: <span id="lives-count">3</span></div>
+                    <div class="hud-item">🌐 Nível: <span id="level-indicator">1</span></div>
+                    <div class="hud-item">🔑 Chaves: <span id="keys-count">0</span></div>
+                </div>
+                
+                <div id="puzzle-modal" class="modal hidden">
+                    <h2>TERMINAL DE SEGURANÇA</h2>
+                    <p id="puzzle-text">Resolva o enigma para desbloquear a porta:</p>
+                    <input type="text" id="puzzle-input" placeholder="Insira a resposta..." autocomplete="off">
+                    <button id="puzzle-submit">Hackear</button>
+                    <p id="puzzle-error" class="error hidden">Acesso Negado. Resposta incorreta.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./Game/levels.js"></script>
+    <script src="./Game/game.js"></script>
+
+    <div class="final">
+        © 2026 CyberShield. Todos os direitos reservados.
+    </div>
+</body>
+</html>
