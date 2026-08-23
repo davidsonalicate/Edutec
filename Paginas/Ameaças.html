@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberShield | Ameaças Digitais</title>
+
+    <link rel="stylesheet" href="../Style/ameaças.css">
+</head>
+
+<body>
+
+    <header class="header" id="inicio">
+
+        <div class="container header__content">
+
+            <a class="brand" href="#inicio">
+
+                <img
+                    src="../img/logo2.png"
+                    alt="Escudo CyberShield"
+                    class="brand__shield"
+                >
+
+                <span>
+                    Cyber<span>Shield</span>
+                </span>
+
+            </a>
+
+
+            <nav class="nav">
+
+                <a href="../index.html">Início</a>
+                <a href="#ameacas"class="active">Ameaças</a>
+                <a href="#protecao">Proteção</a>
+                <a href="#carreiras">Conteúdos</a>
+                <a href="Jogo.html">Jogos</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero__grid">
+
+                <div class="hero__copy">
+
+                    <h1>
+
+                        <span class="white">
+                            Principais
+                        </span>
+
+                        <span class="blue">
+                            Ameaças
+                        </span>
+
+                        <br>
+
+                        <span class="white">
+                            Digitais
+                        </span>
+
+                    </h1>
+
+
+                    <p>
+                        Conheça os ataques mais comuns da
+                        internet e saiba como se proteger.
+                    </p>
+
+
+                    <a
+                        class="primary-button"
+                        href="#ameacas"
+                    >
+                        Saiba mais
+                        <b>→</b>
+                    </a>
+
+                </div>
+
+                <div class="hero__visual">
+
+                    <svg
+                        viewBox="0 0 620 380"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+
+                        <defs>
+
+                            <linearGradient
+                                id="screen"
+                                x1="0"
+                                y1="0"
+                                x2="1"
+                                y2="1"
+                            >
+                                <stop
+                                    offset="0"
+                                    stop-color="#0a2135"
+                                />
+
+                                <stop
+                                    offset="1"
+                                    stop-color="#02070c"
+                                />
+                            </linearGradient>
+
+
+                            <linearGradient
+                                id="shield"
+                                x1="0"
+                                y1="0"
+                                x2="1"
+                                y2="1"
+                            >
+                                <stop
+                                    offset="0"
+                                    stop-color="#109de4"
+                                />
+
+                                <stop
+                                    offset="1"
+                                    stop-color="#043250"
+                                />
+                            </linearGradient>
+
+
+                            <linearGradient
+                                id="base"
+                                x1="0"
+                                y1="0"
+                                x2="0"
+                                y2="1"
+                            >
+                                <stop
+                                    offset="0"
+                                    stop-color="#0a2133"
+                                />
+
+                                <stop
+                                    offset="1"
+                                    stop-color="#02070b"
+                                />
+                            </linearGradient>
+
+
+                            <filter
+                                id="glow"
+                                x="-50%"
+                                y="-50%"
+                                width="200%"
+                                height="200%"
+                            >
+
+                                <feGaussianBlur
+                                    stdDeviation="7"
+                                    result="blur"
+                                />
+
+                                <feMerge>
+
+                                    <feMergeNode
+                                        in="blur"
+                                    />
+
+                                    <feMergeNode
+                                        in="SourceGraphic"
+                                    />
+
+                                </feMerge>
+
+                            </filter>
+
+                        </defs>
+
+
+                        <ellipse
+                            cx="310"
+                            cy="145"
+                            rx="125"
+                            ry="115"
+                            fill="#008fd4"
+                            opacity=".14"
+                        />
+
+                        <rect
+                            x="135"
+                            y="73"
+                            width="350"
+                            height="206"
+                            rx="8"
+                            fill="#03090f"
+                            stroke="#0b466b"
+                            stroke-width="3"
+                        />
+
+
+                        <rect
+                            x="147"
+                            y="85"
+                            width="326"
+                            height="181"
+                            rx="4"
+                            fill="url(#screen)"
+                            stroke="#08233a"
+                        />
+
+                        <g
+                            stroke="#f01f31"
+                            fill="none"
+                            stroke-width="3"
+                        >
+
+                            <path
+                                d="M178 177l19-33 19 33z"
+                            />
+
+                            <path
+                                d="M405 177l19-33 19 33z"
+                            />
+
+                        </g>
+
+                        <g filter="url(#glow)">
+
+                            <path
+                                d="M310 43l67 24v67c0 55-31 88-67 111-36-23-67-56-67-111V67z"
+                                fill="url(#shield)"
+                                stroke="#42c8ff"
+                                stroke-width="5"
+                            />
+
+
+                            <path
+                                d="M310 60l49 18v55c0 42-21 68-49 88-28-20-49-46-49-88V78z"
+                                fill="#05253c"
+                                stroke="#1171a4"
+                                stroke-width="2"
+                            />
+
+
+                            <path
+                                d="M286 139v-18c0-16 10-26 24-26s24 10 24 26v18"
+                                fill="none"
+                                stroke="#a8ecff"
+                                stroke-width="6"
+                                stroke-linecap="round"
+                            />
+
+
+                            <rect
+                                x="280"
+                                y="135"
+                                width="60"
+                                height="49"
+                                rx="6"
+                                fill="#087db8"
+                                stroke="#7ce1ff"
+                                stroke-width="3"
+                            />
+
+
+                            <circle
+                                cx="310"
+                                cy="156"
+                                r="5"
+                                fill="#e1fbff"
+                            />
+
+
+                            <path
+                                d="M310 161v11"
+                                stroke="#e1fbff"
+                                stroke-width="5"
+                                stroke-linecap="round"
+                            />
+
+                        </g>
+
+                        <rect
+                            x="126"
+                            y="273"
+                            width="368"
+                            height="9"
+                            rx="4"
+                            fill="#06111a"
+                            stroke="#0b4565"
+                        />
+
+
+                        <path
+                            d="M112 282h396l50 61H62z"
+                            fill="url(#base)"
+                            stroke="#176b98"
+                            stroke-width="3"
+                        />
+
+                    </svg>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            class="threats"
+            id="ameacas"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <i></i>
+
+                    <h2>
+                        Principais Ameaças
+                    </h2>
+
+                    <i></i>
+
+                </div>
+
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <div class="bug-icon">
+                            ☼
+                        </div>
+
+                        <h3>
+                            Malware
+                        </h3>
+
+                        <p>
+                            Programas maliciosos criados
+                            para danificar sistemas ou
+                            roubar informações.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="bug-icon">
+                            ☼
+                        </div>
+
+                        <h3>
+                            Phishing
+                        </h3>
+
+                        <p>
+                            Golpes que tentam enganar
+                            pessoas para roubar dados
+                            pessoais.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="bug-icon">
+                            ☼
+                        </div>
+
+                        <h3>
+                            Ransomware
+                        </h3>
+
+                        <p>
+                            Ataques que bloqueiam
+                            arquivos e exigem pagamento
+                            para liberá-los.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="bug-icon">
+                            ☼
+                        </div>
+
+                        <h3>
+                            Roubo de identidade
+                        </h3>
+
+                        <p>
+                            Uso indevido de dados
+                            pessoais para aplicar
+                            fraudes e golpes.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <div class="flow">
+
+
+                    <div class="flow__item">
+
+                        <div class="flow__circle">
+
+                            <svg viewBox="0 0 100 100">
+
+                                <rect
+                                    x="24"
+                                    y="30"
+                                    width="52"
+                                    height="40"
+                                    rx="3"
+                                />
+
+                                <path
+                                    d="M24 34l26 21 26-21M24 68l18-17M76 68L58 51"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <b>1</b>
+
+                        <p>
+                            E-mail falso enviado
+                        </p>
+
+                    </div>
+
+
+                    <span class="flow__line"></span>
+
+
+                    <div class="flow__item">
+
+                        <div class="flow__circle">
+
+                            <svg viewBox="0 0 100 100">
+
+                                <path
+                                    d="M34 20v50l13-13 10 19 8-5-10-19h17z"
+                                />
+
+                                <path
+                                    d="M30 12V4M16 20l-7-6M18 34H7M47 16l6-8"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <b>2</b>
+
+                        <p>
+                            Usuário clicou
+                        </p>
+
+                    </div>
+
+
+                    <span class="flow__line"></span>
+
+
+                    <div class="flow__item">
+
+                        <div class="flow__circle">
+
+                            <svg viewBox="0 0 100 100">
+
+                                <rect
+                                    x="20"
+                                    y="25"
+                                    width="60"
+                                    height="38"
+                                    rx="2"
+                                />
+
+                                <path
+                                    d="M14 67h72M29 75h42M42 75l4-11M58 75l-4-11"
+                                />
+
+                                <path
+                                    d="M50 34v17M43 43l7 8 7-8"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <b>3</b>
+
+                        <p>
+                            Malware instalado
+                        </p>
+
+                    </div>
+
+
+                    <span class="flow__line"></span>
+
+
+                    <div class="flow__item">
+
+                        <div class="flow__circle">
+
+                            <svg viewBox="0 0 100 100">
+
+                                <rect
+                                    x="28"
+                                    y="40"
+                                    width="44"
+                                    height="36"
+                                    rx="4"
+                                />
+
+                                <path
+                                    d="M36 40V29c0-12 7-18 14-18s14 6 14 18v3"
+                                />
+
+                                <circle
+                                    cx="50"
+                                    cy="55"
+                                    r="3"
+                                />
+
+                                <path
+                                    d="M50 57v9"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <b>4</b>
+
+                        <p>
+                            Dados roubados
+                        </p>
+
+                    </div>
+
+
+                    <span class="flow__line"></span>
+
+
+                    <div class="flow__item">
+
+                        <div class="flow__circle flow__circle--danger">
+
+                            <svg viewBox="0 0 100 100">
+
+                                <path
+                                    d="M50 16l28 56H22z"
+                                />
+
+                                <path
+                                    d="M50 36v18"
+                                />
+
+                                <circle
+                                    cx="50"
+                                    cy="64"
+                                    r="2.5"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <b>5</b>
+
+                        <p>
+                            Prejuízo para a vítima
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            class="quiz"
+            id="protecao"
+        >
+
+            <div class="quiz__box">
+
+                <svg
+                    class="quiz__art"
+                    viewBox="0 0 150 100"
+                >
+
+                    <rect
+                        x="18"
+                        y="45"
+                        width="66"
+                        height="45"
+                        rx="4"
+                        fill="none"
+                        stroke="#168fd0"
+                        stroke-width="2"
+                    />
+
+
+                    <path
+                        d="M20 48l31 25 31-25M20 87l23-20M82 87L59 67"
+                        fill="none"
+                        stroke="#168fd0"
+                        stroke-width="2"
+                    />
+
+                    <path
+                        d="M51 12c0-7 5-10 10-8 5 2 7 7 7 14v30c0 7-4 11-10 11-8 0-12-5-12-13v-4c0-5 3-8 8-8"
+                        fill="none"
+                        stroke="#23a9e7"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                    />
+
+
+                    <circle
+                        cx="90"
+                        cy="79"
+                        r="12"
+                        fill="#06121d"
+                        stroke="#f12c3b"
+                        stroke-width="2"
+                    />
+
+
+                    <path
+                        d="M90 73v9"
+                        stroke="#f12c3b"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                    />
+
+
+                    <circle
+                        cx="90"
+                        cy="86"
+                        r="1.5"
+                        fill="#f12c3b"
+                    />
+
+                </svg>
+
+
+                <div>
+
+                    <h3>
+                        Você conseguiria identificar um golpe?
+                    </h3>
+
+
+                    <p>
+                        Você recebeu um e-mail dizendo que ganhou
+                        um prêmio e precisa informar sua senha.
+                    </p>
+
+
+                    <div class="quiz__buttons">
+
+                        <span>
+                            Seguro
+                        </span>
+
+                        <span class="selected">
+                            Suspeito
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="carreiras"></section>
+
+        <section id="jogo"></section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer__grid">
+
+            <div class="footer__brand">
+
+                <div class="footer__logo">
+
+                    <img
+                        src="../img/logo2.png"
+                        alt="Escudo CyberShield"
+                        class="footer__shield"
+                    >
+
+
+                    <div class="footer__name">
+
+                        Cyber<span>Shield</span>
+
+                    </div>
+
+                </div>
+
+
+                <p class="footer__about">
+
+                    Protegendo o que importa no<br>
+                    mundo digital
+
+                </p>
+
+                <div class="social">
+
+                    <a
+                        href="#"
+                        class="social__icon instagram"
+                        aria-label="Instagram"
+                    >
+
+                        <svg viewBox="0 0 40 40">
+
+                            <rect
+                                x="6"
+                                y="6"
+                                width="28"
+                                height="28"
+                                rx="8"
+                            />
+
+                            <circle
+                                cx="20"
+                                cy="20"
+                                r="7"
+                            />
+
+                            <circle
+                                cx="28.5"
+                                cy="11.5"
+                                r="1.8"
+                                class="fill"
+                            />
+
+                        </svg>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="social__icon youtube"
+                        aria-label="YouTube"
+                    >
+
+                        <svg viewBox="0 0 40 40">
+
+                            <rect
+                                x="7"
+                                y="11"
+                                width="26"
+                                height="18"
+                                rx="6"
+                            />
+
+                            <path
+                                d="M18 15.5l8 4.5-8 4.5z"
+                            />
+
+                        </svg>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="social__icon github"
+                        aria-label="GitHub"
+                    >
+
+                        <svg viewBox="0 0 40 40">
+
+                            <path
+                                d="M20 6c-8 0-14 6.5-14 14.5 0 6.4 4.1 11.7 9.8 13.6.7.1 1-.3 1-.7v-2.7c-4 .9-4.8-1.7-4.8-1.7-.6-1.6-1.6-2-1.6-2-1.3-.9.1-.9.1-.9 1.5.1 2.3 1.5 2.3 1.5 1.3 2.3 3.5 1.6 4.3 1.2.1-.9.5-1.6.9-2-3.2-.4-6.6-1.6-6.6-7.2 0-1.6.6-2.9 1.5-3.9-.1-.4-.7-1.9.1-3.9 0 0 1.2-.4 4 1.5 1.2-.3 2.4-.4 3.6-.4s2.4.1 3.6.4c2.8-1.9 4-1.5 4-1.5.8 2 .2 3.5.1 3.9.9 1 1.5 2.3 1.5 3.9 0 5.6-3.4 6.8-6.6 7.2.5.5 1 1.4 1 2.8v4.1c0 .4.3.8 1 .7 5.7-1.9 9.8-7.2 9.8-13.6C34 12.5 28 6 20 6z"
+                            />
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer__column">
+
+                <h4>NAVEGAÇÃO</h4>
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a
+                    href="#ameacas"
+                    class="footer-active"
+                >
+                    Ameaças
+                </a>
+
+                <a href="#protecao">
+                    Proteção
+                </a>
+
+                <a href="#carreiras">
+                    Carreiras
+                </a>
+
+                <a href="#jogo">
+                    Jogo
+                </a>
+
+            </div>
+
+            <div class="footer__column footer__contact">
+
+                <h4>CONTATO</h4>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+
+                        <svg viewBox="0 0 40 40">
+
+                            <rect
+                                x="6"
+                                y="8"
+                                width="28"
+                                height="24"
+                                rx="2"
+                            />
+
+                            <path d="M7 10l13 11 13-11" />
+
+                        </svg>
+
+                    </div>
+
+                    <span>
+                        contato@cybershield.com
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+
+                        <svg viewBox="0 0 40 40">
+
+                            <path
+                                d="M14 8l5 6-3 4c2 4 5 7 9 9l4-3 6 5c-2 4-5 5-8 4-10-4-17-11-21-21-1-3 0-6 4-8z"
+                            />
+
+                        </svg>
+
+                    </div>
+
+                    <span>
+                        (11) 9999-9999
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+
+                        <svg viewBox="0 0 40 40">
+
+                            <path
+                                d="M20 5c-6 0-10 4.5-10 10.5C10 23 20 34 20 34s10-11 10-18.5C30 9.5 26 5 20 5z"
+                            />
+
+                            <circle
+                                cx="20"
+                                cy="15.5"
+                                r="3.5"
+                            />
+
+                        </svg>
+
+                    </div>
+
+                    <span>
+                        São Paulo, SP - Brasil
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="footer__column footer__newsletter">
+
+                <h4>NEWSLETTER</h4>
+
+                <p>Receba conteúdos e novidades sobre cibersegurança.</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer__copyright">
+
+            <div class="container">
+
+                2026 CyberSegurança.
+                Todos os direitos reservados.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
