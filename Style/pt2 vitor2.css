@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins', serif;
+    display: flex;
+    justify-content: center;
+    padding: 35px 20px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1600px;
+    background-color: #000000;
+    padding: 35px 55px;
+    margin: 0 auto;
+}
+
+/* CABEÇALHO */
+header {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.titulo-topo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 3px;
+}
+
+.titulo-bottom {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #4DB8FF;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+/* CONTEÚDO */
+.content-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 65px;
+    margin-bottom: 50px;
+}
+
+.texto-coluna {
+    flex: 1;
+    min-width: 0;
+}
+
+.imagem-coluna {
+    width: 300px;
+    flex-shrink: 0;
+    padding-top: 5px;
+}
+
+/* IMAGENS */
+.card-imagem {
+    display: block;
+    width: 100%;
+    height: 170px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 35px;
+}
+
+/* TÍTULOS */
+.section-titulo {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+.content-block:first-of-type .section-titulo {
+    margin-top: 0;
+}
+
+/* ETAPAS */
+.etapa {
+    margin-bottom: 13px;
+}
+
+.etapa-titulo {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+/* PARÁGRAFOS */
+p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #cccccc;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.fluxo-texto {
+    font-size: 0.85rem;
+    color: #a0a0a0;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+/* LISTAS */
+ul {
+    padding-left: 20px;
+    margin-bottom: 18px;
+}
+
+ul li {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #cccccc;
+    margin-bottom: 7px;
+}
+
+.bullet-texto {
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.formula-texto {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* BOTÃO */
+.voltar {
+    display: block;
+    width: 110px;
+    padding: 10px;
+    background-color: #0078E9;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 35px;
+}

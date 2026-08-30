@@ -1,0 +1,242 @@
+/* ===== CyberShield — Proteção no Dia a Dia ===== */
+
+:root {
+  --color-bg: #000000;
+  --color-blue-accent: #4DB8FF;
+  --color-blue-bright: #00d9ff;
+  --color-blue-btn: #0078E9;
+  --color-text-white: #ffffff;
+  --color-text-gray: #cccccc;
+  --font-main: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: var(--font-main);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* ===== Página ===== */
+
+.pdd-page {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1600px;
+  background-color: #000000;
+  padding: 35px 55px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ===== Título ===== */
+
+.pdd-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  margin-bottom: 65px;
+}
+
+.pdd-title .line2 {
+  display: block;
+  color: var(--color-blue-accent);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-top: 3px;
+}
+
+/* ===== Conteúdo ===== */
+
+.pdd-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ===== Título de bloco ===== */
+
+.pdd-text-flow h1.pdd-block-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* ===== Linhas de conteúdo ===== */
+
+.pdd-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 65px;
+  margin-bottom: 50px;
+}
+
+.pdd-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.pdd-row.no-image {
+  display: block;
+}
+
+/* ===== Texto ===== */
+
+.pdd-row-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.pdd-row-text h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.pdd-row-text h2.spaced {
+  margin-top: 35px;
+}
+
+.pdd-row-text p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text-gray);
+  margin-bottom: 18px;
+}
+
+/* ===== Listas ===== */
+
+.pdd-row-text ul {
+  padding-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+.pdd-row-text ul li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text-gray);
+  padding-left: 5px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.pdd-row-text ul li::before {
+  content: '•';
+  position: absolute;
+  left: -15px;
+  color: #ffffff;
+}
+
+/* ===== Imagens ===== */
+
+.pdd-row-img {
+  flex: 0 0 300px;
+  width: 300px;
+  height: 170px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Espaçamento entre blocos ===== */
+
+.pdd-row + .pdd-row {
+  margin-top: 10px;
+}
+
+/* ===== Botão Voltar ===== */
+
+.voltar {
+    display: block;
+    width: 110px;
+    padding: 10px;
+    background-color: #0078E9;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 35px;
+}
+
+/* ===== Responsividade ===== */
+
+@media (max-width: 800px) {
+
+  .pdd-page {
+    padding: 30px 35px;
+  }
+
+  .pdd-row {
+    gap: 40px;
+  }
+
+  .pdd-row-img {
+    flex: 0 0 260px;
+    width: 260px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .pdd-page {
+    padding: 30px 25px;
+  }
+
+  .pdd-row,
+  .pdd-row.reverse {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .pdd-row-img {
+    width: 100%;
+    height: auto;
+    flex: none;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .pdd-page {
+    padding: 25px 20px;
+  }
+
+  .pdd-title {
+    font-size: 1.5rem;
+  }
+
+  .pdd-title .line2 {
+    font-size: 1.8rem;
+  }
+
+  .pdd-row-text p,
+  .pdd-row-text ul li {
+    font-size: 0.85rem;
+  }
+} 

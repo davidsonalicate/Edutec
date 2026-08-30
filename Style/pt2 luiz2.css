@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins', serif;
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    line-height: 1.5;
+}
+
+.pagina {
+    max-width: 1000px;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+/* TÍTULO */
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 55px;
+}
+
+h1 span {
+    display: block;
+    color: #4DB8FF;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+/* TEXTO */
+.texto {
+    flex: 1;
+    width: auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* TÍTULOS PRINCIPAIS */
+.texto h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+/* PRIMEIRO TÍTULO */
+.texto h2:first-child {
+    margin-top: 0;
+}
+
+/* SUBTÍTULOS */
+.texto h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+
+/* PARÁGRAFOS */
+.texto p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #cccccc;
+    margin-bottom: 18px;
+}
+
+/* LISTAS */
+.texto ul {
+    padding-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+.texto li {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+/* IMAGENS */
+.imagens {
+    width: 340px;
+    flex-shrink: 0;
+    margin-top: 80px;
+}
+
+.imagens img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+    /* MAIS ESPAÇO ENTRE AS IMAGENS */
+    margin-bottom: 25px;
+}
+
+/* BOTÃO VOLTAR */
+.voltar {
+    display: block;
+    width: 110px;
+    padding: 10px;
+    background-color: #0078E9;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 35px;
+}
