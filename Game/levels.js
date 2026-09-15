@@ -24,7 +24,7 @@ const LEVEL_DATA = [
         enemyName: "Spyware",
         enemyColor: "#ff00ff",
         bossHP: 4,
-        puzzle: { q: "Qual animal faz miau?", a: "gato" },
+        puzzle: { q: "O que é cibersegurança?", a: "gato" },
         layout: [
             "##################################################",
             "#                                              D #",
