@@ -24,7 +24,7 @@ const LEVEL_DATA = [
         enemyName: "Spyware",
         enemyColor: "#ff00ff",
         bossHP: 4,
-        puzzle: { q: "O que é cibersegurança?", a: "gato" },
+        puzzle: { q: "O que é cibersegurança?", a: "Proteção de computadores" },
         layout: [
             "##################################################",
             "#                                              D #",
@@ -44,7 +44,7 @@ const LEVEL_DATA = [
         enemyName: "Worm",
         enemyColor: "#00ffaa",
         bossHP: 5,
-        puzzle: { q: "Matemática: Quanto é 10 - 3?", a: "7" },
+        puzzle: { q: "O que é uma senha forte?", a: "Uma senha difícil de descobrir" },
         layout: [
             "############################################################",
             "#                                                        D #",
@@ -65,7 +65,7 @@ const LEVEL_DATA = [
         enemyName: "Trojan",
         enemyColor: "#ff5500",
         bossHP: 6,
-        puzzle: { q: "Quantos lados tem um triângulo?", a: "3" },
+        puzzle: { q: "O que é um vírus?", a: "É um programa malicioso" },
         layout: [
             "######################################################################",
             "#                                                                  D #",
@@ -86,7 +86,7 @@ const LEVEL_DATA = [
         enemyName: "Rootkit",
         enemyColor: "#7700ff",
         bossHP: 7,
-        puzzle: { q: "Oposto de Cima?", a: "baixo" },
+        puzzle: { q: "Para que serve um antivírus?", a: "Para proteger o computador" },
         layout: [
             "################################################################################",
             "#                                                                            D #",
@@ -106,7 +106,7 @@ const LEVEL_DATA = [
         enemyName: "Botnet",
         enemyColor: "#00aaff",
         bossHP: 8,
-        puzzle: { q: "Quantas horas tem um dia?", a: "24" },
+        puzzle: { q: "Por que atualizar os aplicativos?", a: "Para melhorar a segurança" },
         layout: [
             "######################################################################################",
             "#                                                                                  D #",
@@ -126,7 +126,7 @@ const LEVEL_DATA = [
         enemyName: "Ransomware",
         enemyColor: "#ff0000",
         bossHP: 9,
-        puzzle: { q: "Matemática: Quanto é 20 dividido por 2?", a: "10" },
+        puzzle: { q: "O que fazer com um link suspeito?", a: "Não clicar" },
         layout: [
             "############################################################################################",
             "#                                                                                        D #",
@@ -146,7 +146,7 @@ const LEVEL_DATA = [
         enemyName: "Keylogger",
         enemyColor: "#aaff00",
         bossHP: 10,
-        puzzle: { q: "Quantos meses tem um ano?", a: "12" },
+        puzzle: { q: "O que é um hacker?", a: "Uma pessoa que invade sistemas" },
         layout: [
             "####################################################################################################",
             "#                                                                                                D #",
@@ -166,7 +166,7 @@ const LEVEL_DATA = [
         enemyName: "Zero-Day",
         enemyColor: "#ffffff",
         bossHP: 12,
-        puzzle: { q: "Matemática: Quanto é 100 + 50?", a: "150" },
+        puzzle: { q: "O que é um firewall?", a: "Uma proteção contra invasões" },
         layout: [
             "############################################################################################################",
             "#                                                                                                        D #",
@@ -185,7 +185,7 @@ const LEVEL_DATA = [
         enemyName: "A.I. Core",
         enemyColor: "#ff0000",
         bossHP: 40,
-        puzzle: { q: "Última Defesa: Digite 'abrir' para liberar o sistema.", a: "abrir" },
+        puzzle: { q: "Por que usar autenticação em duas etapas?", a: "Para aumentar a segurança" },
         layout: [
             "####################################################################################################################",
             "#                                                                                                                D #",
